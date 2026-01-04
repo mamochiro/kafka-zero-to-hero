@@ -1,0 +1,25 @@
+# Go
+/bin/
+/pkg/
+*.exe
+*.test
+*.out
+
+# Go workspace
+/go.work
+/go.work.sum
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+
+# Env
+.env
+
+# Kafka
+*.log
+data/
