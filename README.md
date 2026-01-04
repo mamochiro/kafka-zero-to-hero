@@ -17,16 +17,27 @@ with **15–30 minutes per day**, using **Go (Golang)**.
 - Kafka UI
 
 ## Structure
+```
 kafka-zero-to-hero/
-├── cmd/ # executable apps (producer, consumer)
-├── internal/ # reusable Kafka logic
-├── docs/ # daily learning notes
-├── docker/ # kafka & ui docker-compose
-├── examples/ # focused examples
+├── cmd/ # Executable applications
+│ ├── producer/
+│ └── consumer/
+├── internal/ # Reusable Kafka logic
+│ ├── kafka/
+│ └── model/
+├── docs/ # Daily learning notes
+├───── day01-kafka-basics.md
+├───── day02-installation.md
+├───── day03-topics-partitions.md
+├── docker/ # Kafka & Kafka UI setup
+├── examples/ # Focused Kafka examples
+├── README.md
+└── go.mod
+```
 
 
 ## Progress
-- [ ] Day 1 – Kafka Basics
+- [x] Day 1 – Kafka Basics
 - [ ] Day 2 – Local Setup
 - [ ] Day 3 – Topics & Partitions
 - [ ] Day 4 – Producer
@@ -41,3 +52,10 @@ kafka-zero-to-hero/
 - [ ] Day 13 – Kafka UI
 - [ ] Day 14 – Mini Project
 
+
+## 🚀 How to Start
+
+```bash
+git clone https://github.com/<your-username>/kafka-zero-to-hero.git
+cd kafka-zero-to-hero
+go mod tidy
